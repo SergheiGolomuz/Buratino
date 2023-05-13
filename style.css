@@ -88,8 +88,7 @@ body {
 			overflow: hidden;
 		}
 		#b2 {
-			height: 100%;
-			overflow-y: scroll;
+			height: auto;
 		}
 
 				/*#hd {
