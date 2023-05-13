@@ -1,273 +1,344 @@
 <!DOCTYPE html>
-<!-- saved from url=(0183)http://localhost/russiansoton/?langClass=&tutor=&nameChild=&childDOB=&homeAddress=&postcode=&parentContact=&emergencyContact=&childHealth=&childMain=&childExp=&parentSign=&parentName= -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Enrollment Form</title>
-    <style>
-      * {
-        box-sizing: table;
-        font-size: 20px
-      }
-      
-      body {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        background-image: url('logo/paper.jpg');
-      }
-      .header {
-        display:flex;
-        justify-content: space-evenly;
-      }
-      .button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-  align-items: center;
-  margin-top: 20px;
-  align-self: center;
-  background-image: url('logo/paper3.jpg');
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Enrollment Form</title>
+  <style>
+    .scrollable {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+  <!-- <style>
+    * {
+      box-sizing: table;
+      font-size: 20px
+    }
+    
+    body {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      background-image: url('logo/paper.jpg');
+    }
+    .header {
+      display:flex;
+      justify-content: space-evenly;
+    }
+    .button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: black;
+border-radius: 5px;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+align-items: center;
+margin-top: 20px;
+align-self: center;
+background-image: url('logo/paper3.jpg');
+    }
 
 .button:hover {
-  transform: scale(1.2);
-  color: red;
+transform: scale(1.2);
+color: red;
 }
-      
-      form {
-        border: 5px solid grey;
-        padding: 10px;
-        max-width: 800px; /* Set a maximum width for the form */
-        margin: 2rem auto; /* Center the form horizontally */
-        width: 100%;
-        height: auto;
-        background-image: url('logo/paper4.jpg');
-      }
-
-      h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-      }
-      
-      table {
-        margin: 15px;
-        }
-
-      h2 {
-        font-weight: bold;
-        text-align: center;
-      }
     
-      label {
-        display: inline-block;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      
-      .form-row input[type=text], .form-row input[type=email], .form-row input[type=number] {
-        width: 100%;
-        padding: 25px;
-        margin-bottom: 5px;
-        border: 1px solid gray;
-      }
-      
-      .form-row input[type=submit] {
-        background-color: lightblue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .form-row input[type=text][name=postcode] {
-        width: 82%;
-        display: inline-block;
-      }
-      
-      .form-row input[type=button][name=search] {
-        width: 18%;
-        display: inline-block;
-        background-color: lightpink;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .form-row input[type=button][name=search]:hover {
-        background-color: pink;
+    form {
+      border: 5px solid grey;
+      padding: 10px;
+      max-width: 800px; /* Set a maximum width for the form */
+      margin: 2rem auto; /* Center the form horizontally */
+      width: 100%;
+      height: auto;
+      background-image: url('logo/paper4.jpg');
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    table {
+      margin: 15px;
       }
 
-      .form-row input[type="radio"] {
-        width: 10px;
-        height: 10px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        border: 2px solid black;
-        border-radius: 50%;
-        outline: none;
+    h2 {
+      font-weight: bold;
+      text-align: center;
     }
-    .form-row input[type="radio"]:hover {
-      transform: scale(1.2);
+  
+    label {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
     }
-        #sub {
-            margin-left: 40%;
-            font-size: 24px;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-        }
-        #sub:hover {
-            margin-left: 40%;
-            font-size: 24px;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-            transform: scale(1.2);
-            color: blue;
+    
+    .form-row input[type=text], .form-row input[type=email], .form-row input[type=number] {
+      width: 100%;
+      padding: 25px;
+      margin-bottom: 5px;
+      border: 1px solid gray;
+    }
+    
+    .form-row input[type=submit] {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .form-row input[type=text][name=postcode] {
+      width: 82%;
+      display: inline-block;
+    }
+    
+    .form-row input[type=button][name=search] {
+      width: 18%;
+      display: inline-block;
+      background-color: lightpink;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .form-row input[type=button][name=search]:hover {
+      background-color: pink;
+    }
 
-        }
-        #homeAddress, #childHealth, #parentObj {
-            width: 100%;
-        }
+    .form-row input[type="radio"] {
+      width: 10px;
+      height: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 2px solid black;
+      border-radius: 50%;
+      outline: none;
+  }
+  .form-row input[type="radio"]:hover {
+    transform: scale(1.2);
+  }
+      #sub {
+          margin-left: 40%;
+          font-size: 24px;
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+      }
+      #sub:hover {
+          margin-left: 40%;
+          font-size: 24px;
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+          transform: scale(1.2);
+          color: blue;
+
+      }
+      #homeAddress, #childHealth, #parentObj {
+          width: 100%;
+      }
+
+      #homeAddress {
+          display: block;
+      }
+
+      #parentObj {
+          text-align: center;
+      }
+      .footer {
+    text-align: end;
+  }
+    
+  </style> -->
+
+</head>
+<body style="min-width: 320px">
+  <header class="fixed-top">
+    <!-- Fixed Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">Russian Speaking Community</a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="buratino.html">Buratino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary border-1" href="enFo.html">Enrollment Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Sign-up</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col text-center d-inline-flex">
+        <div class="">
+          <a href="ru/enFo.html">
+          <button type="button" class="btn btn-outline-secondary border-0">Сменить Язык на Русский</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
   
-        #homeAddress {
-            display: block;
-        }
-  
-        #parentObj {
-            text-align: center;
-        }
-        .footer {
-			text-align: end;
-		}
+  <!-- MAIN CONTENT FOR THE PAGE -->
+  <main style="margin:120px 0px"
+  class="text-center align-content-center justify-content-center align-items-center align-self-center">
+  <div class="container">
+
+    <form>
+      <h4 class="mb-4">Pupils' Online Enrollment Form to be Completed by Parents / Guardian</h4>
       
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <a href="index.html" class="button">Back to main page</a>
-      <div id="language-select">
-        <a href="ru/enFo.html" class="button">Switch language to Russian <br>(entered data will be lost)</a>
+      <div class="form-group">
+        <label for="langClass">Language Class:</label>
+        <input type="text" class="form-control" id="langClass" name="langClass">
+      </div>
+      
+      <div class="form-group">
+        <label for="tutor">Tutor In-Charge:</label>
+        <input type="text" class="form-control" id="tutor" name="tutor">
+      </div>
+      
+      <div class="form-group">
+        <label for="nameChild">Full Name of the Child:</label>
+        <input type="text" class="form-control" id="nameChild" name="nameChild">
+      </div>
+      
+      <div class="form-group">
+        <label for="childDOB">Date of Birth:</label>
+        <input type="date" class="form-control" id="childDOB" name="childDOB">
+      </div>
+      
+      <div class="form-group">
+        <label for="childGen">Gender of the Child:</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="Male" name="childGen" value="Male">
+            <label class="form-check-label" for="Male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="Female" name="childGen" value="Female">
+            <label class="form-check-label" for="Female">Female</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="homeAddress">Home Address (Flat, Street Number, City/Town):</label>
+        <input type="text" class="form-control" id="homeAddress" name="homeAddress">
+      </div>
+      
+      <div class="form-group">
+        <label for="postcode">Postcode:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="postcode" name="postcode">
+          <div class="input-group-append">
+            <input type="button" class="btn btn-secondary" id="search" name="search" value="Search">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="parentContact">Home Telephone Number:</label>
+        <input type="text" class="form-control" id="parentContact" name="parentContact">
+      </div>
+      
+      <div class="form-group">
+        <label for="emergencyContact">Contact Telephone Number in Emergency:</label>
+        <input type="text" class="form-control" id="emergencyContact" name="emergencyContact">
+      </div>
+      
+      <div class="form-group">
+        <label for="childHealth">Does your child suffer from any chronic illness?<br>(for example: Asthma, epilepsy etc.)<br>If the answer is 'YES' what is it?:</label>
+        <input type="text" class="form-control" id="childHealth" name="childHealth">
+      </div>
+      
+      <div class="form-group">
+        <label for="childMain">Name of the Child's Mainstream in school:</label>
+        <input type="text" class="form-control" id="childMain" name="childMain">
+
+      </div>
+      <div class="form-group">
+        <label for="childExp">Child's Year Group in mainstream school:</label>
+        <input type="text" class="form-control" id="childExp" name="childExp">
+      </div>
+      <div class="form-group">
+        <label for="parentObj">Do you have any objection Us to use some of the provided information for advertisment purposes?</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="yes" name="parentObj" value="yes">
+            <label class="form-check-label" for="yes">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="no" name="parentObj" value="no">
+            <label class="form-check-label" for="no">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="parentName">Your Full Name:</label>
+        <input type="text" class="form-control" id="parentName" name="parentName">
+      </div>
+      <input type="submit" class="btn btn-primary" id="sub" value="Submit">
+      <h5 class="mt-4">Any enquiries regarding payment, please contact: Mrs Elena Vorobeva</h5>
+      <h6 class="mt-4">We encourage all parents to make contributions in time for running the service, as Town Council's contribution has been reduced substantially.</h6>
+    </form>
+    
+        
+  </div>
+  </main>
+
+  <footer class="fixed-bottom">
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-text mx-auto">
+            <a href="#" class="nav-link btn btn-outline-secondary border-0">Terms and Conditions</a>
+          </div>
+
+    <div class="d-inline-flex">
+      <div>
+        <a href="https://www.facebook.com/groups/114168481962921/">
+        <img style="height:40px;width:50px;border-radius:15px" src="png/fb.png" class="px-1"></a>
+      </div>
+      <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="png/insta.png" class="px-1"></a>
       </div>
     </div>
-    <form>
-    <h1>Pupils' On-line Enrollment Form to be Completed by Parents / Guardian</h1>
-
-
-
-
-      <label for="langClass">Language Class:</label>
-      <input type="text" id="langClass" name="langClass"> <br>
-
-
-
-      <label for="tutor">Tutor In-Charge:</label>
-
-      <input type="text" id="tutor" name="tutor"> <br>
-
-
-
-
-      <label for="nameChild">Name of the Child:</label>
-
-      <input type="text" id="nameChild" name="nameChild"> <br>
- 
-
-
-
-      <label for="childDOB">Date of Birth:</label>
-
-      <input type="date" placeholder="Select a date" id="childDOB" name="childDOB"><br>
-
-
-
-
-      <label for="childGen">Gender of the Child:</label>
-        <input type="radio" id="Male" name="childGen" value="Male">
-        <label for="Male">Male</label>
-        <input type="radio" id="Female" name="childGen" value="Female">
-        <label for="Female">Female</label>
-      <br>
-
-
-      <table style="margin:0px"><tbody><tr><td>
-      <label for="homeAddress">Home Address (Flat, Street Number, City/Town):</label>
-      </td></tr>
-      <tr><td style="display: flexbox;">
-      <input type="text" id="homeAddress" name="homeAddress"></td></tr>
-      </tbody></table><br>
-
-
-
-      <label for="postcode">Postcode:</label>
-      <input type="text" id="postcode" name="postcode">
-      <input type="button" id="search" name="search" value="Search"><br>
-
-
-
-
-      <label for="parentContact">Home Telephone Number:</label>
-
-      <input type="text" id="parentContact" name="parentContact"><br>
-
-
-
-
-      <label for="emergencyContact">Contact Telephone Number in Emergency:</label>
-
-      <input type="text" id="emergencyContact" name="emergencyContact"><br>
-
-
-      <table style="margin:0px"><tbody><tr><td>
-      <label for="childHealth">Does your child suffer from any chronic illness?<br>(for example: Asthma, epilepsy etc.)<br>If the answer is 'YES' what is it?:</label></td>
-      <td style="width:400px">
-      <input type="text" id="childHealth" name="childHealth"></td></tr>
-    </tbody></table><br>
-
-
-
-      <label for="childMain">Name of the Child's Mainstream in school:</label>
-      <input type="text" id="childMain" name="childMain"><br>
-
-
-      <label for="childExp">Child's Year Group in mainstream school:</label>
-
-      <input type="text" id="childExp" name="childExp"><br>
-
-
-
-
-      <label for="parentObj">Do you have any objection Us to use some of the provided information for advertisment purposes?</label>
-      
-      <div id="parentObj">
-        <input type="radio" id="yes" name="parentObj" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="parentObj" value="no">
-        <label for="no">No</label>
-      </div><br>
- 
-
-
-      <label for="parentSign">Signature of the Parent / Guardian:</label>
-
-      <input type="text" id="parentSign" name="parentSign"><br>
-
-
-
-      <label for="parentName">Name (in Block capital):</label>
-
-      <input type="text" id="parentName" name="parentName"><br>
-
-      <input id="sub" type="submit" value="Submit">
-      <h2>We encourage all parents to make contributions for running the service as Town Council's contribution has been reduced substantially.</h2>
-      <h2>Any Enquiry regarding payment, please contact: Mrs Elena Vorobeva</h2>
-    </form>
-    <div class="footer">
-      <p><a href="#">Terms and Conditions</a></p>
-      <p>Russian speaking community of Southampton © 2023</p>
+    
+      <div class="navbar-text mx-auto">
+        Russian Speaking Community &copy; 2023  
     </div>
-</body></html>
+  </nav>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,105 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ru">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Русская Школа</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="header">
-      <div id="language-select">
-        <a href="index.html" class="language-option">Русский</a>
-        <a href="..\home.html" class="language-option">English</a>
-      </div>
-    
-      <div class="social">
-        <a href="https://www.facebook.com/groups/114168481962921/">
-        <img src="png/fb.png"></a>
-        <a href="#">
-        <img src="png/insta.png"></a>
-        <a href="https://twitter.com/intent/tweet?url=https%3A//youtu.be/_liJloA-Cw0&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0%20%22%D0%91%D1%83%D1%80%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%22%2C%20%20Southampton%2C%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&via=YouTube&related=YouTube,YouTubeTrends,YTCreators">
-          <img src="png/tw.png" style="width: 35px"></a>
-        <a href="#">
-        <img src="png/vk.png"></a>
-        <a href="https://ok.ru/russiansp">
-        <img src="png/ok.png"></a>
-      </div>
-      <div class="login">
-        <a href="#">Войти в аккаунт</a>
-      </div>
-    </div>
-    <div class="pictures">
-    <div class="logo">
-      <img src="logo/logo.png">
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Русскоговорящее Сообщество</title>
+  <style>
+    .scrollable {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body style="min-width: 320px">
+  <header class="fixed-top">
+    <!-- Fixed Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-    </div>
-    <div class="spacer" id="rubur">Школа русского языка «Буратино»
-    </div>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+      <a class="navbar-brand" href="index.html">Русскоязычное Сообщество</a>
+        
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+        
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="aboutUs.html">О Нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="buratino.html">Буратино</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="gallery.html">Галлерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary border-0" href="enFo.html">Заполнить Заявку</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Войти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Зарегестрироваться</a>
+          </li>
+        </ul>
+      </div>
+
+      
+
+      <div class="col text-center d-inline-flex">
+        <div class="">
+          <a href="/index.html">
+            <button type="button" class="btn btn-outline-secondary border-0">Switch to English Language</button></a>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="nav">
-        <a href="aboutUs.html">О Нас</a>
-        <a href="contacts.html">Контакты</a>
-        <a href="buratino.html">Буратино</a>
-        <a href="gallery.html">Галлерея</a>
-        <a href="enFo.html">Заполнить Заявку</a>
-      </div>
-      <div class="news">
-        <h2>Русскоговорящее сообщество</h2>
-        <div class="pic1">
-          <img src="logo/bk3.jpg">
-        </div>
-        <p>Русскоязычное сообщество является волонтерской организацией. Наша цель - дать возможность заинтересованным людям встречаться, общаться, изучать и исследовать русский язык и культуру общества, где это используется в гостеприимной, безопасной и инклюзивной атмосфере.</p>
-        <p><b>Школа Русского Языка “Буратино” в Southampton</b> существует уже двеннадцатый год. Во многом этот уникальный проект стал возможен благодаря поддержке городской администрации, так как в городе уже давно успешно работает языковая программа, целью которой является оказание помощи общинам в сохранении и культивировании родного языка у детей.</p>
+    </nav>
+  </header>
+  
+  <!-- MAIN CONTENT FOR THE PAGE -->
+  <main style="margin:120px 0px" 
+  class="text-center align-content-center justify-content-center align-items-center align-self-center">
+  <div class="container">
+
+    <p>Русскоязычное сообщество является волонтерской организацией. Наша цель - дать возможность заинтересованным людям встречаться, общаться, изучать и исследовать русский язык и культуру общества, где это используется в гостеприимной, безопасной и инклюзивной атмосфере.</p>
+    <img src="/logo/bk.jpg">
+        <p><b>Школа Русского Языка «Буратино» в Southampton</b> существует уже двеннадцатый год. Во многом этот уникальный проект стал возможен благодаря поддержке городской администрации, так как в городе уже давно успешно работает языковая программа, целью которой является оказание помощи общинам в сохранении и культивировании родного языка у детей.</p>
         <p>Благодаря этой поддержке мы смогли предоставить русскоговорящим семьям возможность обучения детей родному языку.  Школа динамично развивается,  и сейчас к нам приходят уже около сорока учеников.  Это говорит о том, что наш проект очень нужнен и востребован, так как для многих детей, живущих в Саутгемптоне это единственная возможность не только обучаться русскому языку и литературе, но и соприкоснуться с культурой, традициями русского народа, и даже просто пообщаться на родном языке со сверстниками.</p>
 
+
+  </div>
+  </main>
+
+  <footer class="fixed-bottom">
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-text mx-auto">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Условия и Положения</a>
+    </div>
+
+    <div class="d-inline-flex">
+      <div>
+        <a href="https://www.facebook.com/groups/114168481962921/">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/fb.png" class="px-1"></a>
+      </div>
+      <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/insta.png" class="px-1"></a>
       </div>
     </div>
-    <div class="footer">
-      <p><a href="#">Условия и Положения</a></p>
-      <p>Русскоговорящее сообщество в Соутгемптоне © 2023</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+      <div class="navbar-text mx-auto">
+        Русскоязычное сообщество &copy; 2023  
+      </div>
+  </nav>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
+

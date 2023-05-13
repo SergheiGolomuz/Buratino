@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    
-    <title>Gallery</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <div id="language-select">
-        <a href="ru/gallery.html" class="language-option">RU</a>
-        <a href="gallery.html" class="language-option">EN</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Gallery</title>
+  <style>
+    .scrollable {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body style="min-width: 320px">
+  <header class="fixed-top">
+    <!-- Fixed Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">Russian Speaking Community</a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="buratino.html">Buratino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-1" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary border-0" href="enFo.html">Enrollment Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Sign-up</a>
+          </li>
+        </ul>
       </div>
-    
-      <div class="social">
-        <a href="https://www.facebook.com/groups/114168481962921/">
-        <img src="png/fb.png"></a>
-        <a href="#">
-        <img src="png/insta.png"></a>
-        <a href="https://twitter.com/intent/tweet?url=https%3A//youtu.be/_liJloA-Cw0&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0%20%22%D0%91%D1%83%D1%80%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%22%2C%20%20Southampton%2C%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&via=YouTube&related=YouTube,YouTubeTrends,YTCreators">
-          <img src="png/tw.png" style="width: 35px"></a>
-        <a href="#">
-        <img src="png/vk.png"></a>
-        <a href="https://ok.ru/russiansp">
-        <img src="png/ok.png"></a>
+
+      <div class="col text-center d-inline-flex">
+        <div class="">
+          <a href="ru/gallery.html">
+          <button type="button" class="btn btn-outline-secondary border-0">Сменить Язык на Русский</button></a>
+        </div>
       </div>
-      <div class="login">
-        <a href="#">Log In</a>
-      </div>
-    </div>
-    <div class="pictures">
-    <div class="logo">
-      <img src="logo/logo.png" style="position: absolute; opacity: 0.1;">
-    </div>
-    </div>
-    <div class="spacer" id="rubur">Russian Language school - "Buratino"</div>
-    <div class="content">
-      <div class="nav">
-        <a href="aboutUs.html">About Us</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="buratino.html">Buratino</a>
-        <a href="index.html"><img id="home" src="png/back.png">Home</a>
-        <a href="enFo.html">Enrollment Form</a>
-      </div>
-      <div class="news">
-        <h2>Gallery</h2>
+    </nav>
+  </header>
+  
+  <!-- MAIN CONTENT FOR THE PAGE -->
+  <main style="margin:120px 0px"
+  class="text-center align-content-center justify-content-center align-items-center align-self-center">
+  <div class="container">
+
+    <h2>Gallery</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper urna eget eros bibendum, ac eleifend ipsum lacinia.</p>
         <a></a>
         <div class="gallery">
-          <iframe width="426" height="240" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe max-width="100%" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        
+  </div>
+  </main>
+
+  <footer class="fixed-bottom">
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-text mx-auto">
+            <a href="#" class="nav-link btn btn-outline-secondary border-0">Terms and Conditions</a>
+          </div>
+
+    <div class="d-inline-flex">
+      <div>
+        <a href="https://www.facebook.com/groups/114168481962921/">
+        <img style="height:40px;width:50px;border-radius:15px" src="png/fb.png" class="px-1"></a>
+      </div>
+      <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="png/insta.png" class="px-1"></a>
       </div>
     </div>
-    <div class="footer">
-      <p><a href="#">Terms and Conditions</a></p>
-      <p>Russian speaking community of Southampton © 2023</p>
+    
+      <div class="navbar-text mx-auto">
+        Russian Speaking Community &copy; 2023  
     </div>
-  </body>
+  </nav>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
+

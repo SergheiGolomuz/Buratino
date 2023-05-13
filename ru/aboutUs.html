@@ -1,67 +1,115 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="en">
-    <title>О Нас</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <div id="language-select">
-        <a href="aboutUs.html" class="language-option">Русский</a>
-        <a href="\aboutUs.html" class="language-option">Английский</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>О Нас</title>
+  <style>
+    .scrollable {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body style="min-width: 320px">
+  <header class="fixed-top">
+    <!-- Fixed Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">Русскоязычное Сообщество</a>
+        
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+        
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-1" href="aboutUs.html">О Нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="buratino.html">Буратино</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="gallery.html">Галлерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary border-0" href="enFo.html">Заполнить Заявку</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Войти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Зарегестрироваться</a>
+          </li>
+        </ul>
       </div>
-    
-      <div class="social">
-        <a href="https://www.facebook.com/groups/114168481962921/">
-        <img src="png/fb.png"></a>
-        <a href="#">
-        <img src="png/insta.png"></a>
-        <a href="https://twitter.com/intent/tweet?url=https%3A//youtu.be/_liJloA-Cw0&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0%20%22%D0%91%D1%83%D1%80%D0%B0%D1%82%D0%B8%D0%BD%D0%BE%22%2C%20%20Southampton%2C%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F&via=YouTube&related=YouTube,YouTubeTrends,YTCreators">
-          <img src="png/tw.png" style="width: 35px"></a>
-        <a href="#">
-        <img src="png/vk.png"></a>
-        <a href="https://ok.ru/russiansp">
-        <img src="png/ok.png"></a>
+
+      
+
+      <div class="col text-center d-inline-flex">
+        <div class="">
+          <a href="/aboutUs.html">
+            <button type="button" class="btn btn-outline-secondary border-0">Switch to English Language</button></a>
+        </div>
       </div>
-      <div class="login">
-        <a href="#">Войти в аккаунт</a>
-      </div>
-    </div>
-    <div class="pictures">
-    <div class="logo">
-      <img src="logo/logo.png">
-    </div>
-    </div>
-    <div class="spacer" id="rubur">Школа русского языка «Буратино»
-      </div>
-    </div>
-    <div class="content">
-      <div class="nav">
-        <a href="index.html"><img id="home" src="png/back.png">На Главную</a>
-        <a href="contacts.html">Контакты</a>
-        <a href="buratino.html">Буратино</a>
-        <a href="gallery.html">Галлерея</a>
-        <a href="enFo.html">Заполнить Заявку</a>
-      </div>
-      <div class="news">
-        <h2>О нас</h2>
-        <div class="pic2">
+    </nav>
+  </header>
+  
+  <!-- MAIN CONTENT FOR THE PAGE -->
+  <main style="margin:120px 0px" 
+  class="text-center align-content-center justify-content-center align-items-center align-self-center">
+  <div class="container">
+
+    <h2>О нас</h2>
+        <div>
           <img src="logo/bk.jpg">
         </div>
-        <p>Мы волонтерская организация, основанная группой русскоязычных матерей, проживающих в Саутгемптоне. Наша цель – создать русскоязычную среду для детей и взрослых, дать возможность изучать русский язык, культуру, традиции, проводить семейные и культурные мероприятия, связанные с русской культурой.</p>
+
+    <p>Мы волонтерская организация, основанная группой русскоязычных матерей, проживающих в Саутгемптоне. Наша цель – создать русскоязычную среду для детей и взрослых, дать возможность изучать русский язык, культуру, традиции, проводить семейные и культурные мероприятия, связанные с русской культурой.</p>
         <p><b>Культурные мероприятия и семейные дни</b> - мы организуем культурные мероприятия для семей с конкурсами, играми, художественными мастерскими и вкусными закусками. У родителей будет возможность встретиться и пообщаться друг с другом за чашечкой чая или кофе.</p>
         <p><b>Школа русского языка «Буратино»</b> - Работая вместе с Community Language Services, наша цель — помочь сообществам в сохранении и развитии русского языка.</p>
         <p>У нас работает очень дружный и профессиональный  коллектив учителей и ассистентов-волонтеров, безсамоотверженной отдачи которых этот проект был бы невозможен.  Нам удалось разработать свои уникальные авторские программы обучения детей, с учетом их особенностей, интересов, потребностей, а также объективных замечаниямий родителей, которых мы стремимся вовлечь в учебный процесс, так как семья делает основной вклад в развитие языковой личности ребенка. Поэтому мы всегда рады вести диалог с родителями и предоставить любую помощь в дополнительном обучении ребят.</p>
         <p>Для нас важно, чтобы дети, интегрируясь в местное общество, правильно оценивали себя, понимали свою самобытность и несли в себе зерно русской культуры. Основы культурологии и этнографии, фольклор и традиции занимают прочное место в нашей образовательной программе. Мы весело справляем праздники, дни рождения, знакомим ребят с народными играми и забавами, проводим открытые уроки в конце года, на которых празднуем успехи наших учеников вместе с их родителями.</p>
         <p>Конечно, у школы есть и свои трудности.  Так, на данный момент остро стоит вопрос о продолжении финансирования школы в будущем учебном году, поскольку с приходом нового правительства идет массовое урезание бюджета. Отказ в финансовой помощи от городской администрации может повлечь за собой вынужденный переход на самофинансирование, а значит придется реорганизовать школу и повысить плату за обучение. К сожалению, это будет означать, что некоторые ученики к нам больше ходить не смогут.</p>
         <p>Мы очень надеемся, что этого не произойдет и мы сможем работать как и прежде,  направив свои силы на реализацию новых идей и планов. Хотелось бы уделить больше внимания всестороннему развитию ребят, обучая их танцам, рисованию, драме, культурологии и этикету.  У нас есть талантливые полные энтузиазма педагоги, которые готовы работать над воплощением этих идей.  Мы видим результаты нашей работы и верим, что у школы “Буратино” яркое будущее!</p>
+
+
+  </div>
+  </main>
+
+  <footer class="fixed-bottom">
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-text mx-auto">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Условия и Положения</a>
+    </div>
+
+    <div class="d-inline-flex">
+      <div>
+        <a href="https://www.facebook.com/groups/114168481962921/">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/fb.png" class="px-1"></a>
+      </div>
+      <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/insta.png" class="px-1"></a>
       </div>
     </div>
-    <div class="footer">
-      <p><a href="#">Условия и Положения</a></p>
-      <p>Русскоговорящее сообщество в Соутгемптоне © 2023</p>
-    </div>
-  </body>
+      <div class="navbar-text mx-auto">
+        Русскоязычное сообщество &copy; 2023  
+      </div>
+  </nav>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
+

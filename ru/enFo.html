@@ -1,275 +1,343 @@
 <!DOCTYPE html>
-<!-- saved from url=(0183)http://localhost/russiansoton/?langClass=&tutor=&nameChild=&childDOB=&homeAddress=&postcode=&parentContact=&emergencyContact=&childHealth=&childMain=&childExp=&parentSign=&parentName= -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Заявление на поступление</title>
-    <style>
-      * {
-        /*box-sizing: table;*/
-        font-size: 20px
-      }
-      
-      .header {
-        display:flex;
-        justify-content: space-evenly;
-      }
-      .YN{
-        display:grid;
-      }
-      body {
-        /*background-color: white;*/
-        margin: 0;
-        padding: 0;
-        background-image: url('logo/paper.jpg');
-      }
-      .button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-  align-items: center;
-  margin-top: 20px;
-  align-self: center;
-  background-image: url('logo/paper3.jpg');
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Заявление на поступление</title>
+  <style>
+    .scrollable {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+  <!-- <style>
+    * {
+      /*box-sizing: table;*/
+      font-size: 20px
+    }
+    
+    .header {
+      display:flex;
+      justify-content: space-evenly;
+    }
+    .YN{
+      display:grid;
+    }
+    body {
+      /*background-color: white;*/
+      margin: 0;
+      padding: 0;
+      background-image: url('logo/paper.jpg');
+    }
+    .button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: black;
+border-radius: 5px;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+align-items: center;
+margin-top: 20px;
+align-self: center;
+background-image: url('logo/paper3.jpg');
+    }
 
 .button:hover {
-  transform: scale(1.2);
-  color: red;
+transform: scale(1.2);
+color: red;
 }
-      
-      form {
-        border: 5px solid grey;
-        padding: 10px;
-        max-width: 80%; /* Set a maximum width for the form */
-        margin: 2rem auto; /* Center the form horizontally */
-        /*width: 100%;
-        height: 100vh;
-        overflow: none;*/
-        background-image: url('logo/paper4.jpg');
-      }
-
-      h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-      }
-      
-      table {
-        margin: 15px;
-        }
-
-      h2 {
-        font-weight: bold;
-        text-align: center;
-      }
     
-      label {
-        display: inline-block;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      
-      .form-row input[type=text], .form-row input[type=email], .form-row input[type=number] {
-        width: 100%;
-        padding: 25px;
-        margin-bottom: 5px;
-        border: 1px solid gray;
-      }
-      
-      .form-row input[type=submit] {
-        background-color: lightblue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .form-row input[type=text][name=postcode] {
-        width: 75%;
-        display: inline-block;
-      }
-      
-      .form-row input[type=button][name=search] {
-        width: 18%;
-        display: inline-block;
-        background-color: lightpink;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .form-row input[type=button][name=search]:hover {
-        background-color: pink;
-      }
-
-      .form-row input[type="radio"] {
-        width: 10px;
-        height: 10px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        border: 2px solid black;
-        border-radius: 50%;
-        outline: none;
+    form {
+      border: 5px solid grey;
+      padding: 10px;
+      max-width: 80%; /* Set a maximum width for the form */
+      margin: 2rem auto; /* Center the form horizontally */
+      /*width: 100%;
+      height: 100vh;
+      overflow: none;*/
+      background-image: url('logo/paper4.jpg');
     }
-    #sub {
-            margin-left: 40%;
-            font-size: 24px;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-        }
-        #sub:hover {
-            margin-left: 40%;
-            font-size: 24px;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
-            transform: scale(1.2);
-            color: blue;
 
-        }
-        #homeAddress, #childHealth, #parentObj {
-            width: 100%;
-        }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    table {
+      margin: 15px;
+      }
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+    }
   
-        #homeAddress {
-            display: block;
-        }
-  
-        #parentObj {
-            text-align: center;
-        }
-        .footer {
-			text-align: end;
-		}
+    label {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .form-row input[type=text], .form-row input[type=email], .form-row input[type=number] {
+      width: 100%;
+      padding: 25px;
+      margin-bottom: 5px;
+      border: 1px solid gray;
+    }
+    
+    .form-row input[type=submit] {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .form-row input[type=text][name=postcode] {
+      width: 75%;
+      display: inline-block;
+    }
+    
+    .form-row input[type=button][name=search] {
+      width: 18%;
+      display: inline-block;
+      background-color: lightpink;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .form-row input[type=button][name=search]:hover {
+      background-color: pink;
+    }
+
+    .form-row input[type="radio"] {
+      width: 10px;
+      height: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 2px solid black;
+      border-radius: 50%;
+      outline: none;
+  }
+  #sub {
+          margin-left: 40%;
+          font-size: 24px;
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+      }
+      #sub:hover {
+          margin-left: 40%;
+          font-size: 24px;
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 4);
+          transform: scale(1.2);
+          color: blue;
+
+      }
+      #homeAddress, #childHealth, #parentObj {
+          width: 100%;
+      }
+
+      #homeAddress {
+          display: block;
+      }
+
+      #parentObj {
+          text-align: center;
+      }
+      .footer {
+    text-align: end;
+  }
+    
+  </style> -->
+</head>
+<body style="min-width: 320px">
+  <header class="fixed-top">
+    <!-- Fixed Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="index.html">Русскоязычное Сообщество</a>
+        
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       
-    </style>
-  </head>
-  <body>
-    <div class="header">
-    <a href="index.html" class="button">Вернуться на главную страницу</a>
-    <div id="language-select">
-      <a href="\enFo.html" class="button">Сменить язык на Английский <br>(введёные данные будут утеряны)</a>
-    </div>
-  </div>
+        
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="aboutUs.html">О Нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="buratino.html">Буратино</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="gallery.html">Галлерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary border-1" href="enFo.html">Заполнить Заявку</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Войти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Зарегестрироваться</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center d-inline-flex flex-wrap">
+        <div class="">
+          <a href="/enFo.html">
+            <button type="button" class="btn btn-outline-secondary border-0">Switch to English Language</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- MAIN CONTENT FOR THE PAGE -->
+  <main style="margin:120px 0px" 
+  class="text-center align-content-center justify-content-center align-items-center align-self-center">
+  <div class="container">
+
     <form>
-    <h1 style="overflow-wrap: break-word;">Элекронная форма регистрации учеников для заполнения родителями/опекунами</h1>
-
-
-
-
-      <label for="langClass">Языковой класс:</label>
-      <input type="text" id="langClass" name="langClass"> <br>
-
-
-
-      <label for="tutor">Ответственный репетитор:</label>
-
-      <input type="text" id="tutor" name="tutor" placeholder="(Полное Имя)"> <br>
-
-
-
-
-      <label for="nameChild">Имя ребёнка:</label>
-
-      <input type="text" id="nameChild" name="nameChild"> <br>
- 
-
-
-
-      <label for="childDOB">Дата рождения:</label>
-
-      <input type="date" placeholder="Select a date" id="childDOB" name="childDOB"><br>
-
-
-
-
-      <label for="childGen">Пол ребенка:</label>
-        <input type="radio" id="Male" name="childGen" value="Male">
-        <label for="Male">Мужской</label>
-        <input type="radio" id="Female" name="childGen" value="Female">
-        <label for="Female">Женский</label>
-      <br>
-
-
-      <table style="margin:0px"><tbody><tr><td>
-      <label for="homeAddress">Домашний адрес (квартира, дом, улица, город):</label>
-      </td></tr>
-      <tr><td style="display: flexbox;">
-      <input type="text" id="homeAddress" name="homeAddress" style="width:100%"></td></tr>
-      </tbody></table><br>
-
-
-
-      <label for="postcode">Почтовый индекс:</label>
-      <input type="text" id="postcode" name="postcode">
-      <input type="button" id="search" name="search" value="Search"><br>
-
-
-
-
-      <label for="parentContact">Домашний Номер Телефона:</label>
-
-      <input type="text" id="parentContact" name="parentContact"><br>
-
-
-
-
-      <label for="emergencyContact">Контактный номер телефона в случае экстренной необходимости:</label>
-
-      <input type="text" id="emergencyContact" name="emergencyContact"><br>
-
-
-      <table style="margin:0px"><tbody><tr><td>
-      <label for="childHealth">Страдает ли ребенок каким-либо хроническим заболеванием?(например: астма, эпилепсия и т.д.)
-        <br>Если ответ «ДА», пожалуйста обозначьте заболевание:</label></td>
-      <td style="width:100%">
-      <input type="text" id="childHealth" name="childHealth" placeholder="(Если ответ «НЕТ», пожалуйста оставьте поле пустым)"></td></tr>
-    </tbody></table><br>
-
-
-
-      <label for="childMain">Название основного направления программы обучения ребёнка в общеобразовательной школе:</label>
-      <input type="text" id="childMain" name="childMain" style="width:600px"><br>
-
-
-      <label for="childExp">На каком году обучения ребёнок находится в общеобразовательной школе на данный момент:</label>
-
-      <input type="text" id="childExp" name="childExp" style="width:600px"><br>
-
-
-
-      <div class="YN">
-      <label for="parentObj">Есть ли у вас какие-либо возражения против того, чтобы Мы использовали что-то из предоставленной информации в целях рекламы своей деятельности?</label>
+      <h4 class="mb-4">Элекронная форма регистрации учеников для заполнения родителями / опекунами</h4>
       
-      <div id="parentObj">
-        <input type="radio" id="yes" name="parentObj" value="yes">
-        <label for="yes">Да</label>
-        <input type="radio" id="no" name="parentObj" value="no">
-        <label for="no">Нет</label>
-      </div></div><br>
- 
+      <div class="form-group">
+        <label for="langClass">Языковой класс:</label>
+        <input type="text" class="form-control" id="langClass" name="langClass">
+      </div>
+      
+      <div class="form-group">
+        <label for="tutor">Ответственный репетитор:</label>
+        <input type="text" class="form-control" id="tutor" name="tutor">
+      </div>
+      
+      <div class="form-group">
+        <label for="nameChild">Полное Имя ребёнка:</label>
+        <input type="text" class="form-control" id="nameChild" name="nameChild">
+      </div>
+      
+      <div class="form-group">
+        <label for="childDOB">Дата рождения:</label>
+        <input type="date" class="form-control" id="childDOB" name="childDOB">
+      </div>
+      
+      <div class="form-group">
+        <label for="childGen">Пол ребенка:</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="Male" name="childGen" value="Male">
+            <label class="form-check-label" for="Male">Мужской</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="Female" name="childGen" value="Female">
+            <label class="form-check-label" for="Female">Женский</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="homeAddress">Домашний адрес (квартира, дом, улица, город):</label>
+        <input type="text" class="form-control" id="homeAddress" name="homeAddress">
+      </div>
+      
+      <div class="form-group">
+        <label for="postcode">Почтовый Индекс:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="postcode" name="postcode">
+          <div class="input-group-append">
+            <input type="button" class="btn btn-secondary" id="search" name="search" value="Поиск">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="parentContact">Домашний Номер Телефона:</label>
+        <input type="text" class="form-control" id="parentContact" name="parentContact">
+      </div>
+      
+      <div class="form-group">
+        <label for="emergencyContact">Контактный номер телефона в случае экстренной необходимости:</label>
+        <input type="text" class="form-control" id="emergencyContact" name="emergencyContact">
+      </div>
+      
+      <div class="form-group">
+        <label for="childHealth">Страдает ли ребенок каким-либо хроническим заболеванием?(например: астма, эпилепсия и т.д.)<br>Если ответ «ДА», пожалуйста обозначьте заболевание?:</label>
+        <input type="text" class="form-control" id="childHealth" name="childHealth">
+      </div>
+      
+      <div class="form-group">
+        <label for="childMain">Название основного направления программы обучения ребёнка в общеобразовательной школе:</label>
+        <input type="text" class="form-control" id="childMain" name="childMain">
 
-
-      <!---<label for="parentSign">Подпись родителя/опекуна:</label>
-
-      <input type="text" id="parentSign" name="parentSign"><br>--->
-
-
-
-      <label for="parentName">Ваше Полное Имя:</label>
-
-      <input type="text" id="parentName" name="parentName"><br>
-
-      <input id="sub" type="submit" value="Подтвердить Заявку">
-      <h2>Мы призываем всех родителей своевременно оплачивать предоставляемые услуги, поскольку поддержка от Городского Совета (Town Council) значительно сократилась.</h2>
-      <h2>По любым вопросам, связанным с оплатой, пожалуйста обращайтесь к г-же Елене Воробьёвой</h2>
+      </div>
+      <div class="form-group">
+        <label for="childExp">На каком году обучения ребёнок находится в общеобразовательной школе на данный момент:</label>
+        <input type="text" class="form-control" id="childExp" name="childExp">
+      </div>
+      <div class="form-group">
+        <label for="parentObj">Есть ли у вас какие-либо возражения против того, чтобы Мы использовали что-то из предоставленной информации в целях рекламы своей деятельности?</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="yes" name="parentObj" value="yes">
+            <label class="form-check-label" for="yes">Да</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="no" name="parentObj" value="no">
+            <label class="form-check-label" for="no">Нет</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="parentName">Ваше Полное Имя:</label>
+        <input type="text" class="form-control" id="parentName" name="parentName">
+      </div>
+      <input type="submit" class="btn btn-primary" id="sub" value="Submit">
+      <h5 class="mt-4">По любым вопросам, связанным с оплатой, пожалуйста обращайтесь к г-же Елене Воробьёвой</h5>
+      <h6 class="mt-4">Мы призываем всех родителей своевременно оплачивать предоставляемые услуги, поскольку поддержка от Городского Совета (Town Council) значительно сократилась.</h6>
+      
     </form>
-    <div class="footer">
-      <p><a href="#">Terms and Conditions</a></p>
-      <p>Russian speaking community of Southampton © 2023</p>
+
+  </div>
+  </main>
+
+  <footer class="fixed-bottom">
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-text mx-auto">
+            <a class="nav-link btn btn-outline-secondary border-0" href="#">Условия и Положения</a>
     </div>
-</body></html>
+
+    <div class="d-inline-flex">
+      <div>
+        <a href="https://www.facebook.com/groups/114168481962921/">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/fb.png" class="px-1"></a>
+      </div>
+      <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="/png/insta.png" class="px-1"></a>
+      </div>
+    </div>
+      <div class="navbar-text mx-auto">
+        Русскоязычное сообщество &copy; 2023  
+      </div>
+  </nav>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
