@@ -67,39 +67,47 @@
   class="text-center align-content-center justify-content-center align-items-center align-self-center">
   <div class="container">
 
-    <div class="video">
+    <!-- <div class="video">
       <video src="..\v7.mp4" autoplay muted></video>
-    </div>
+    </div> -->
 
     <h2>Контакты</h2>
-        <p>С нами можно связаться следующими способами:</p>
-        <ul>
-          <li>Мобильный Телефон: 07907579755 - Таня</li>
-          <br>
-          <li>Электронная почта: info@russiansoton.co.uk</li>
-          <br>
-          <li>
-            Если у Вас есть вопросы, не стесняйтесь их задать заполнив форму ниже, и мы Вам ответим соответствующим способом: 
-          <br>
-          <div class="form">
-            <form>
-              <label for="name">Имя:</label>
-              <input type="text" id="name" name="name" placeholder="(Необязательно)">
-              
-              <label for="email">Электронная почта:</label>
-              <input type="email" id="email" name="email" placeholder="(произвольный@пример.ком)">
-              
-              <label for="phone">Номер телефона:</label>
-              <input type="phone" id="phone" name="phone" placeholder="(Необязательно)">
-              
-              <label for="message">Сообщение:</label>
-              <textarea id="message" name="message" placeholder="Если это поле оставть пустым, то сообщение отправлено не будет"></textarea>
-              
-              <input type="submit" value="Отправить сообщение">
-            </form>
-          </div>
-          </li>
-        </ul>
+  <p>С нами можно связаться следующими способами:</p>
+  <ul>
+    <li>Мобильный Телефон: 07907579755 - Таня</li>
+    <li>Электронная почта: info@russiansoton.co.uk</li>
+    <li>
+      Если у Вас есть вопросы, не стесняйтесь их задать заполнив форму ниже, и мы Вам ответим соответствующим способом:
+    </li>
+  </ul>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label for="name">Имя:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="(Необязательно)">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Электронная почта:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="(произвольный@пример.ком)">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Номер телефона:</label>
+          <input type="phone" class="form-control" id="phone" name="phone" placeholder="(Необязательно)">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Сообщение:</label>
+          <textarea class="form-control" id="message" name="message" placeholder="Если это поле оставть пустым, то сообщение отправлено не будет"></textarea>
+        </div>
+        
+        <input type="submit" class="btn btn-primary" value="Отправить сообщение">
+      </form>
+    </div>
+  </div>
 
   </div>
   </main>

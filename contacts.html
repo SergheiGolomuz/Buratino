@@ -65,39 +65,48 @@
   class="text-center align-content-center justify-content-center align-items-center align-self-center">
   <div class="container">
 
-    <div class="video">
+    <!-- <div class="video">
       <video src="v7.mp4" autoplay muted></video>
-    </div>
+    </div> -->
 
-        <h2>Contacts</h2>
-        <p>We may be reached out via:</p>
-        <ul>
-          <li>Mobile Phone: 07907579755 - Tanya</li>
-          <br>
-          <li>E-mail: info@russiansoton.co.uk</li>
-          <br>
-          <li>
-            If you have any enquiries feel free to write it below and we will respond in a respective manner: 
-          <br>
-          <div class="form">
-            <form>
+    <h2>Contacts</h2>
+    <p>We may be reached out via:</p>
+    <ul>
+      <li>Mobile Phone: 07907579755 - Tanya</li>
+      <br>
+      <li>E-mail: info@russiansoton.co.uk</li>
+      <br>
+      <li>
+        If you have any enquiries, feel free to write it below and we will respond in a respective manner:
+        <br>
+        <div class="row justify-content-center">
+          <form class="col-md-6">
+            <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="(Optional)">
-            
+              <input type="text" class="form-control" id="name" name="name" placeholder="(Optional)">
+            </div>
+          
+            <div class="form-group">
               <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" placeholder="(random@example.com)">
-              
+              <input type="email" class="form-control" id="email" name="email" placeholder="(random@example.com)">
+            </div>
+            
+            <div class="form-group">
               <label for="phone">Phone:</label>
-              <input type="phone" id="phone" name="phone" placeholder="(Optional)">
-              
+              <input type="phone" class="form-control" id="phone" name="phone" placeholder="(Optional)">
+            </div>
+            
+            <div class="form-group">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" placeholder="If this field left blank the message will not be sent"></textarea>
-              
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-          </li>
-        </ul>
+              <textarea class="form-control" id="message" name="message" placeholder="If this field is left blank, the message will not be sent"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+    
   </div>
   </main>
 
