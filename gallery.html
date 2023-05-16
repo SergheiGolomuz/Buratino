@@ -4,96 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="icon" href="./png/logo.png" type="image/png">
   <title>Gallery</title>
   <style>
     .scrollable {
       height: 100%;
       overflow-y: auto;
     }
+    main{
+      margin:70px 0;
+    }
+    img.fb {
+      height:40px;
+      border-radius:20px;
+      box-shadow: -4px 10px 8px black; 
+      opacity: 0.7;
+    }
+    button.btn {
+      height: 40px;
+      width: 79px;
+      border-radius:20px;
+      box-shadow: -2px 8px 5px black; 
+      opacity: 0.7;
+    }
   </style>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
+  
 </head>
 <body style="min-width: 320px">
   <header class="fixed-top">
     <!-- Fixed Header -->
-    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #FFD700;">
-
-      <a class="navbar-brand" href="./index.html">Russian Speaking Community</a>
-
+    <nav class="row navbar navbar-expand-md navbar-light bg-warning px-md-5">
+      <a class="row navbar font-weight-bold text-danger" href="./index.html">Russian Speaking Community</a>
+      <img src="./png/logo.png" style="height:40px;border-radius: 50px;">
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-
-
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="./aboutUs.html">About Us</a>
+        <ul class="navbar-nav px-xl-5">
+          <li class="nav-item px-lg-5">
+            <a class="nav-link btn btn-outline-danger border-0" href="./aboutUs.html">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="./contacts.html">Contacts</a>
+          <li class="nav-item px-lg-5">
+            <a class="nav-link btn btn-outline-danger border-0" href="./contacts.html">Contacts</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="./buratino.html">Buratino</a>
+          <li class="nav-item px-lg-5">
+            <a class="nav-link btn btn-outline-danger border-0" href="./buratino.html">Buratino</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-1" href="./gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="./enFo.html">Enrollment Form</a>
+          <li class="nav-item px-lg-5">
+            <a class="nav-link btn btn-outline-danger border-1" href="./gallery.html">Gallery</a>
           </li>
           <!-- <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="#">Login</a>
+            <a class="nav-link btn btn-outline-danger border-0" href="./enFo.html">Enrollment Form</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link btn btn-outline-danger border-0" href="#">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-outline-primary border-0" href="#">Sign-up</a>
+            <a class="nav-link btn btn-outline-danger border-0" href="#">Sign-up</a>
           </li> -->
-        </ul>
-      </div>
-
-      <div class="col text-center d-inline-flex">
-        <div class="">
-          <a href="./ru/gallery.html">
-          <button type="button" class="btn btn-outline-primary border-0">Сменить Язык на Русский</button></a>
-        </div>
+        </ul>  
       </div>
     </nav>
   </header>
   
   <!-- MAIN CONTENT FOR THE PAGE -->
-  <main style="margin:120px 0px"
-  class="text-center align-content-center justify-content-center align-items-center align-self-center">
-  <div class="container">
-
-    <h2>Gallery</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper urna eget eros bibendum, ac eleifend ipsum lacinia.</p>
-        <a></a>
-        <div class="gallery">
-          <iframe max-width="100%" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-  </div>
-  </main>
-
-  <footer class="fixed-bottom">
-    <!-- Fixed Footer -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFD700;">
-        <div class="navbar-text mx-auto">
-            <a href="#" class="nav-link btn btn-outline-primary border-0">Terms and Conditions</a>
-          </div>
-
-    <div class="d-inline-flex">
-      <div>
-        <a href="https://www.facebook.com/groups/114168481962921/">
-        <img style="height:40px;width:50px;border-radius:15px" src="./png/fb.png" class="px-1"></a>
-      </div>
-      <div>
-        <a href="#">
-        <img style="height:40px;width:50px;border-radius:15px" src="./png/insta.png" class="px-1"></a>
+  <main class="container text-center align-content-center justify-content-center align-items-center align-self-center">
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div><h1>Gallery</h1>  
+        section is under maintenance
       </div>
     </div>
     
-      <div class="navbar-text mx-auto">
+    
+  <div class="p-1 mx-1">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae culpa soluta ex, saepe velit quas vero fugit ab dolor? Nam corporis qui veniam blanditiis laboriosam dolorum, illum nisi libero!</p>
+    <div class="">
+      <iframe height="300" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse autem minima reprehenderit aperiam, possimus quia architecto, sequi iusto nulla placeat iste dolorum eius laboriosam sapiente eveniet fugiat, praesentium excepturi.
+    Dicta a fugit incidunt!</p>
+    <div class="">
+      <img src="./logo/bk3.JPG" style="width:100%; max-width:500px">
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem minima reiciendis ratione tempore quidem iste similique adipisci tempora libero quos consectetur suscipit quas quia magni, nam debitis ut, deleniti consequuntur!</p>
+  </div>
+  </main>
+
+  <footer class="fixed-bottom bg-warning px-md-5">
+    <!-- Fixed Footer -->
+    <nav class="row navbar justify-content-between px-sm-5">
+        <!-- <div class="navbar-text mx-auto">
+            <a href="#" class="nav-link btn btn-outline-danger border-0">Terms and Conditions</a>
+          </div>
+
+    <div class="d-inline-flex">
+        <div>
+        <a href="#">
+        <img style="height:40px;width:50px;border-radius:15px" src="./png/insta.png" class="px-1"></a>
+      </div>
+    </div> -->
+    
+    <a href="https://www.facebook.com/groups/114168481962921/">
+    <img class="fb" src="./png/fb.png"></a>
+    
+    <div class="text-center d-inline">
+        <a href="./ru/index.html">
+        <button type="button" class="btn btn-danger">Русский</button></a>
+    </div>
+
+      <div class="font-light font-weight-light blockquote-footer">
         Russian Speaking Community &copy; 2023  
     </div>
   </nav>

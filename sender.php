@@ -4,7 +4,7 @@
     $email = $_POST['email'];
     $text = $_POST['text'];
 
-	$to = "golomuzserghei@gmail.com"; 
+	$to = "admin@russiansoton.com"; 
 	$date = date ("d.m.Y"); 
 	$time = date ("h:i");
 	$from = $email;
@@ -19,6 +19,7 @@
 	mail($to, $subject, $msg, "From: $from ");
 
 ?>
+
 <video style="width:100%" src="./video/v7.mp4" autoplay muted></video>
-<p>Sending your message, please expect to hear from us</p>
-<p>Ваше сообщение отправляется, пожалуйста ожидайте нашего ответа.</p>
+<p>Your message is sent, please expect to hear from us</p>
+<p>Ваше сообщение отправлено, пожалуйста ожидайте нашего ответа.</p>
