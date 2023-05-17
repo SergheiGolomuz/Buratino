@@ -1,0 +1,1 @@
+hello this is a test message to check the work-ability of the form on http://www.russiansoton.co.uk/contacts.html

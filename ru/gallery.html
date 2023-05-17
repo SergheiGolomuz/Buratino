@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link rel="icon" href="../png/logo.png" type="image/png">
   <title>Галерея</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     .scrollable {
       height: 100%;
@@ -27,6 +29,11 @@
       opacity: 0.7;
     }
   </style>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
 </head>
 <body style="min-width: 320px">
   <header class="fixed-top">
@@ -72,16 +79,30 @@
   </header>
   
   <!-- MAIN CONTENT FOR THE PAGE -->
-  <main class="text-center align-content-center justify-content-center align-items-center align-self-center">
-  <div class="container">
-
+  <main class="container text-center align-content-center justify-content-center align-items-center align-self-center">
+  
+    <div class="alert alert-warning align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div class="ml-2">  
+       Над этим разделом ведуться работы
+      </div>
+    </div>
     <h1>Галерея</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper urna eget eros bibendum, ac eleifend ipsum lacinia.</p>
-        <a href="#"></a>
-        <div class="gallery">
-          <iframe max-width="100%" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
+    
+  <div class="p-1 mx-1">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae culpa soluta ex, saepe velit quas vero fugit ab dolor? Nam corporis qui veniam blanditiis laboriosam dolorum, illum nisi libero!</p>
+    <div class="">
+      <iframe height="300" src="https://www.youtube.com/embed/_liJloA-Cw0" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse autem minima reprehenderit aperiam, possimus quia architecto, sequi iusto nulla placeat iste dolorum eius laboriosam sapiente eveniet fugiat, praesentium excepturi.
+    Dicta a fugit incidunt!</p>
+    <div class="">
+      <img src="./logo/bk3.JPG" style="width:100%; max-width:500px">
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem minima reiciendis ratione tempore quidem iste similique adipisci tempora libero quos consectetur suscipit quas quia magni, nam debitis ut, deleniti consequuntur!</p>
+    <div class="">
+      <img src="../logo/welc.jpg" style="width:100%; max-width:500px">
+    </div>
   </div>
   </main>
 
